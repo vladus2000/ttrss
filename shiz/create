@@ -1,0 +1,4 @@
+CREATE USER 'ttrss'@'localhost' IDENTIFIED BY 'ttrss';
+CREATE DATABASE ttrss;
+GRANT ALL PRIVILEGES ON ttrss.* TO "ttrss"@"localhost" IDENTIFIED BY 'ttrss';
+

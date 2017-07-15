@@ -1,0 +1,5 @@
+# ttrss
+
+/var/lib/mysql/
+
+
