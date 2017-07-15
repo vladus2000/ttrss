@@ -1,4 +1,4 @@
-FROM vladus2000/arch-yaourt-evil-base
+FROM vladus2000/arch-base
 MAINTAINER vladus2000 <docker@matt.land>
 
 COPY shiz/ /
