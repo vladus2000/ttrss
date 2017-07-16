@@ -10,8 +10,8 @@ else
 fi
 php-fpm
 nginx
-su -s /bin/bash http -c '/usr/bin/php /usr/share/webapps/tt-rss/update.php --daemon'
 while true
 do
-	sleep 1h
+	su -s /bin/bash http -c '/usr/bin/php /usr/share/webapps/tt-rss/update.php --daemon'
+	sleep 60
 done
