@@ -12,7 +12,7 @@ RUN pacman -Syyu --noconfirm --needed && \
 	ln -s /usr/share/webapps/tt-rss /usr/share/nginx/html/tt-rss && \
 	mv config.php /usr/share/nginx/html/tt-rss/. && \
 	chown -R http:http /usr/share/nginx/html/tt-rss/ && \
-	sed -e 's/;extension=iconv.so/extension=iconv.so/;s/;extension=mysqli.so/extension=mysqli.so/;s/;extension=mysqli.so/extension=mysqli.so/' /etc/php/php.ini > /t && \
+	sed -e 's/;extension=iconv/extension=iconv/;s/;extension=mysqli/extension=mysqli/' /etc/php/php.ini > /t && \
 	mv /t /etc/php/php.ini && \
 	chmod +x /startup.sh
 
