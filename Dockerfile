@@ -6,7 +6,7 @@ COPY shiz/ /
 RUN pacman -Syyu --noconfirm --needed && \
 	groupadd -g 89 mysql && \
 	useradd -u 89 -g mysql mysql && \
-	pacman -S --noconfirm --needed tt-rss nginx mariadb php-fpm && \
+	pacman -S --noconfirm --needed tt-rss nginx mariadb php-fpm php-intl && \
 	rm -rf /var/cache/pacman/pkg/* /var/lib/pacman/sync/* && \
 	mv nginx.conf /etc/nginx/. && \
 	ln -s /usr/share/webapps/tt-rss /usr/share/nginx/html/tt-rss && \
